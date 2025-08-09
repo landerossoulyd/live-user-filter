@@ -36,3 +36,15 @@ const getData = async () => {
 getData();
 
 filter.addEventListener("input", (e) => filterData(e.target.value));
+<div class="user-info">
+            <h4>${user.name.first} ${user.name.last}</h4>
+            <p>${user.location.city}, ${user.location.country}</p>
+      </div>
+      `;
+    result.appendChild(li);
+  });
+};
+
+getData();
+
+filter.addEventListener("input", (e) => filterData(e.target.value));
